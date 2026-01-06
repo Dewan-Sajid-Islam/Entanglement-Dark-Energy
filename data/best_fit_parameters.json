@@ -1,0 +1,147 @@
+{
+    "model": "Entanglement Dark Energy (EDE)",
+    "date": "2024-01-01",
+    "parameters": [
+        {
+            "name": "H0",
+            "value": 72.1,
+            "error_plus": 0.9,
+            "error_minus": 0.9,
+            "units": "km/s/Mpc",
+            "description": "Hubble constant"
+        },
+        {
+            "name": "Omega_m0",
+            "value": 0.294,
+            "error_plus": 0.008,
+            "error_minus": 0.008,
+            "units": null,
+            "description": "Total matter density parameter"
+        },
+        {
+            "name": "Omega_b0",
+            "value": 0.048,
+            "error_plus": 0.001,
+            "error_minus": 0.001,
+            "units": null,
+            "description": "Baryon density parameter"
+        },
+        {
+            "name": "Omega_c0",
+            "value": 0.246,
+            "error_plus": 0.008,
+            "error_minus": 0.008,
+            "units": null,
+            "description": "Cold dark matter density parameter"
+        },
+        {
+            "name": "sigma8",
+            "value": 0.829,
+            "error_plus": 0.008,
+            "error_minus": 0.008,
+            "units": null,
+            "description": "Amplitude of matter fluctuations"
+        },
+        {
+            "name": "S8",
+            "value": 0.812,
+            "error_plus": 0.012,
+            "error_minus": 0.012,
+            "units": null,
+            "description": "Sigma8 × sqrt(Omega_m/0.3)"
+        },
+        {
+            "name": "w0",
+            "value": -0.954,
+            "error_plus": 0.020,
+            "error_minus": 0.020,
+            "units": null,
+            "description": "Dark energy equation of state (present)"
+        },
+        {
+            "name": "n_s",
+            "value": 0.965,
+            "error_plus": 0.004,
+            "error_minus": 0.004,
+            "units": null,
+            "description": "Scalar spectral index"
+        },
+        {
+            "name": "tau",
+            "value": 0.054,
+            "error_plus": 0.007,
+            "error_minus": 0.007,
+            "units": null,
+            "description": "Optical depth to reionization"
+        }
+    ],
+    "derived": [
+        {
+            "name": "Omega_ent0",
+            "value": 0.706,
+            "error_plus": 0.008,
+            "error_minus": 0.008,
+            "units": null,
+            "description": "Entanglement dark energy density parameter"
+        },
+        {
+            "name": "Age",
+            "value": 13.65,
+            "error_plus": 0.05,
+            "error_minus": 0.05,
+            "units": "Gyr",
+            "description": "Age of the universe"
+        },
+        {
+            "name": "z_eq",
+            "value": 3400.0,
+            "error_plus": 50.0,
+            "error_minus": 50.0,
+            "units": null,
+            "description": "Redshift of matter-radiation equality"
+        },
+        {
+            "name": "z_reion",
+            "value": 7.7,
+            "error_plus": 0.8,
+            "error_minus": 0.8,
+            "units": null,
+            "description": "Redshift of reionization"
+        },
+        {
+            "name": "r_s",
+            "value": 147.0,
+            "error_plus": 0.3,
+            "error_minus": 0.3,
+            "units": "Mpc",
+            "description": "Sound horizon at drag epoch"
+        },
+        {
+            "name": "theta_s",
+            "value": 0.010413,
+            "error_plus": 0.000005,
+            "error_minus": 0.000005,
+            "units": "rad",
+            "description": "Angular sound horizon scale"
+        }
+    ],
+    "statistics": {
+        "chi2_CMB": 2779.3,
+        "chi2_SN": 1528.2,
+        "chi2_BAO": 12.4,
+        "chi2_H0": 1.2,
+        "chi2_total": 4321.1,
+        "log_evidence": -2155.6,
+        "BIC": 4372.8,
+        "AIC": 4345.1
+    },
+    "data_sets": [
+        "Planck 2018 TTTEEE+lowE+lensing",
+        "Pantheon+ SN Ia",
+        "BOSS DR12 BAO",
+        "6dFGS BAO",
+        "SDSS MGS BAO",
+        "SH0ES H0"
+    ],
+    "notes": "Best-fit parameters from MCMC analysis including all data sets. Errors are 68% credible intervals."
+}
