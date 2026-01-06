@@ -1,13 +1,9 @@
-🌌 Entanglement Dark Energy (EDE) Model
-
-<div align="center">
+Entanglement Dark Energy (EDE) Model
 
 "We are limitless in a limited space."
 — Dewan Sajid Islam
 
-</div>
-
-🚀 Quick Start
+Quick Start
 
 ```bash
 # Clone the repository
@@ -24,7 +20,9 @@ make figures
 make all
 ```
 
-📊 What This Repository Contains
+What This Repository Contains
+
+Directory Structure
 
 Directory Contents Description
 data/ parameters.json, best_fit_parameters.json Cosmological parameters, MCMC results, observational data
@@ -34,17 +32,17 @@ figures/ figure1.pdf, figure2.pdf, figure3.pdf, figure4.pdf Publication-ready fi
 latex/ main.tex, references.bib Complete LaTeX manuscript source
 tests/ test_background.py, test_growth.py Unit tests for validation
 
-🧮 Key Results: EDE vs ΛCDM
+Key Results: EDE vs ΛCDM
 
 Cosmological Parameters (68% CL)
 
 Parameter EDE Model ΛCDM Model Units Improvement
-Hubble Constant H₀ = 72.1 ± 0.9 H₀ = 67.36 ± 0.54 km/s/Mpc ✅ Hubble tension resolved
+Hubble Constant H₀ = 72.1 ± 0.9 H₀ = 67.36 ± 0.54 km/s/Mpc Hubble tension resolved
 Matter Density Ωₘ = 0.294 ± 0.008 Ωₘ = 0.3156 ± 0.0074 — —
 Baryon Density Ω_b = 0.048 ± 0.001 Ω_b = 0.0493 ± 0.0002 — —
 Fluctuation Amplitude σ₈ = 0.829 ± 0.008 σ₈ = 0.811 ± 0.006 — —
-Structure Parameter S₈ = 0.812 ± 0.012 S₈ = 0.832 ± 0.013 — ✅ Reduces S₈ tension
-Dark Energy EoS w₀ = -0.954 ± 0.020 w = -1 (fixed) — ✅ Dynamical dark energy
+Structure Parameter S₈ = 0.812 ± 0.012 S₈ = 0.832 ± 0.013 — Reduces S₈ tension
+Dark Energy EoS w₀ = -0.954 ± 0.020 w = -1 (fixed) — Dynamical dark energy
 Spectral Index n_s = 0.965 ± 0.004 n_s = 0.9649 ± 0.0042 — Consistent
 Optical Depth τ = 0.054 ± 0.007 τ = 0.0544 ± 0.0073 — Consistent
 
@@ -57,29 +55,22 @@ Angular Scale θ* = 0.010413 ± 0.000005 θ* = 0.010413 ± 0.000005 rad CMB acou
 Redshift of Equality z_eq = 3400 ± 50 z_eq = 3402 ± 26 — Matter-radiation equality
 Redshift of Reionization z_reion = 7.7 ± 0.8 z_reion = 7.7 ± 0.8 — Epoch of reionization
 
-🔬 The EDE Model: Core Equations
+The EDE Model: Core Equations
 
 1. Entanglement Energy Density
 
-```
 ρ_ent = (3/(8πG)) * [1/R_h² - (Ṙ_h)/(H R_h³)]
-```
-
 Where R_h is the future event horizon
 
 2. Equation of State
 
-```
-w_ent = -1 + (2/3)*(Ṙ_h/(H R_h))*[1 - 1/(H R_h) + (̈R_h)/(2H Ṙ_h) - Ṙ_h/(2H R_h)]/[1 - Ṙ_h/(H R_h)]
-```
+w_ent = -1 + (2/3)(Ṙ_h/(H R_h))[1 - 1/(H R_h) + (̈R_h)/(2H Ṙ_h) - Ṙ_h/(2H R_h)]/[1 - Ṙ_h/(H R_h)]
 
 3. Future Event Horizon
 
-```
 R_h(t) = a(t) ∫_t^∞ dt'/a(t')
-```
 
-🛠️ How to Use This Repository
+How to Use This Repository
 
 Command Line Interface
 
@@ -114,7 +105,7 @@ print(f"Hubble tension reduction: {(ede.H0/lcdm.H0 - 1)*100:.1f}%")
 print(f"EDE w(z=0) = {w_ede[0]:.3f} (dynamical!)")
 ```
 
-📈 Testable Predictions
+Testable Predictions
 
 1. Scale-Dependent Matter Clustering
 
@@ -138,7 +129,7 @@ z = 0.5 0.478 0.470 +1.7%
 z = 1.0 0.485 0.479 +1.3%
 z = 2.0 0.492 0.488 +0.8%
 
-🎯 Key Features of the EDE Model
+Key Features of the EDE Model
 
 Feature EDE Implementation Advantage
 Origin of Dark Energy Quantum entanglement entropy First-principles, no new fields
@@ -148,7 +139,7 @@ Dynamical w(z) Derived from entanglement evolution Testable with future surveys
 Early Universe Negligible at high-z Preserves BBN and recombination
 Theoretical Basis Wheeler-DeWitt + Holography Connects QG to cosmology
 
-📁 Complete File Reference
+Complete File Reference
 
 Essential Files for Reproduction
 
@@ -167,7 +158,7 @@ Notebook Workflow
 3. Continue to: notebooks/03_Power_Spectrum.ipynb
 4. Finish with: notebooks/04_CMB_Spectra.ipynb
 
-🧪 Validation & Testing
+Validation & Testing
 
 Test Command Expected Result
 Background evolution python -m pytest tests/test_background.py -v All tests pass
@@ -175,7 +166,7 @@ Growth functions python -c "from scripts.growth_functions import GrowthCalculato
 Power spectrum python -c "from scripts.power_spectrum import PowerSpectrum; from scripts.background_evolution import EDECosmology; test_power_spectrum()" P(k) positive, σ₈≈0.8
 Figure generation python scripts/generate_figures.py 4 figures + corner plot
 
-🌟 Why EDE is Different
+Why EDE is Different
 
 Aspect Traditional Models Entanglement Dark Energy
 Theoretical Basis Ad-hoc scalar fields, modified gravity Emergent from quantum gravity
@@ -184,7 +175,7 @@ Fine-tuning Cosmological constant: 10¹²⁰ fine-tuning No fine-tuning: scale s
 Predictions Generic w(z) evolution, few distinctive signals Specific scale-dependent clustering, CMB signatures
 Connection to QG None Direct: entanglement entropy → dark energy
 
-🔮 Future Extensions
+Future Extensions
 
 Extension Status Potential Impact
 Full Boltzmann code integration Planned Accurate CMB and LSS predictions
@@ -193,19 +184,21 @@ Perturbation theory for EDE Planned Small-scale clustering predictions
 Connection to string theory Future work Fundamental quantum gravity basis
 Observational forecasts (Euclid, Roman) Planned Testable predictions for future surveys
 
-📞 Contact & Collaboration
+Contact & Collaboration
 
 Dewan Sajid Islam
 Independent Cosmology Researcher
 Dhaka, Bangladesh
 
-· Email: johnnykitty06@gmail.com
+· GitHub: @dewansajidislam
+· Email: dewan.sajid.islam@gmail.com
+· arXiv: Coming soon!
 
-📜 License
+License
 
 This work is released under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgments
+Acknowledgments
 
 · The Planck Collaboration for CMB data
 · Pantheon+ team for supernova observations
@@ -216,17 +209,12 @@ This work is released under the MIT License - see the LICENSE file for details.
 
 ---
 
-<div align="center">
-
 "We are limitless in a limited space."
-
 The universe's acceleration emerges from its quantum information content.
-
-</div>
 
 ---
 
-🚨 Troubleshooting
+Troubleshooting
 
 Issue Solution
 ModuleNotFoundError Run pip install -r requirements.txt
@@ -235,7 +223,7 @@ Matplotlib font warnings Ignore - figures will still generate correctly
 Slow execution Use make quick-test for basic checks
 Notebooks not loading Ensure Jupyter is installed: pip install jupyter
 
-📊 Performance Benchmarks
+Performance Benchmarks
 
 Operation Typical Runtime Memory Usage
 Background solution (z_max=5) 2-3 seconds ~100 MB
@@ -246,16 +234,4 @@ Full figure generation 10-15 seconds ~200 MB
 
 ---
 
-<div align="center">
-
-⚡ Ready to Explore?
-
-```bash
-git clone https://github.com/dewansajidislam/Entanglement-Dark-Energy-EDE.git
-cd Entanglement-Dark-Energy-EDE
-make all
-```
-
 Discover how quantum entanglement shapes our accelerating universe.
-
-</div>
