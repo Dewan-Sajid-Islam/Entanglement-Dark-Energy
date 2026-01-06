@@ -1,7 +1,7 @@
 """
 Entanglement Dark Energy Background Evolution Solver
 Author: Dewan Sajid Islam
-Date: 2024
+Date: 2026
 """
 
 import numpy as np
