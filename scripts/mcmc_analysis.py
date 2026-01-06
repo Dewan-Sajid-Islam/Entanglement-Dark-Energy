@@ -1,7 +1,7 @@
 """
 Full MCMC Analysis for Entanglement Dark Energy Model
 Author: Dewan Sajid Islam
-Date: 2024
+Date: 2026
 """
 
 import numpy as np
