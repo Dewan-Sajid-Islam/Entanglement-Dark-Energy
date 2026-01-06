@@ -1,4 +1,4 @@
-#🌌 Entanglement Dark Energy (EDE) Model
+🌌 Entanglement Dark Energy (EDE) Model
 
 <div align="center">
 
